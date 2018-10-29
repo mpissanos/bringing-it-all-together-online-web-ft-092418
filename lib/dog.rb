@@ -1,10 +1,8 @@
 class Dog
   attr_accessor :name, :breed
   
-  def initialize (id:, name:, breed:)
-    @id = id
-    @name = name
-    @breed = breed
+  def initialize (hash)
+    hash.each {|k,v|}
   end
   
 end
