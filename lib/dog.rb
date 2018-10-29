@@ -43,7 +43,11 @@ class Dog
       def self.create(hash)
         new_dog = self.new(hash)
         new_dog.save
-       
+      end
+      
+      def self.find_by_id
+        sql = <<-SQL
+          
       end
         
         
