@@ -25,6 +25,7 @@ class Dog
     end
     
     def save
+      new_dog = self.new
       
     end
       
