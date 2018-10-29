@@ -43,8 +43,7 @@ class Dog
     end
       
       def self.create(hash)
-        new_dog = hash.each {|k,v| self.send("#{k}=", v)}
-        new_dog.save
+        new_dog = hash.each {|k,v| self.send("#{k}=", v).save}
       end
       
       def self.new_from_db(row)
