@@ -51,9 +51,9 @@ class Dog
           WHERE id = ?
           SQL
           
-          result = DB[:conn].execute(sql, id)
+          result = DB[:conn].execute(sql, id)[0]
           
-          self.new = 
+          self.new
       end
         
         
